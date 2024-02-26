@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="624.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierParticipation">
+   <children>
+      <Label fx:id="labelM" layoutX="52.0" layoutY="26.0" onMouseClicked="#Menu" text="back" textFill="#0e05f7">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Text fill="#cf0101" fontSmoothingType="LCD" layoutX="86.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="please enter your new participation informations">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="idevent" layoutX="422.0" layoutY="324.0" promptText="Enter new event id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nbrp" layoutX="422.0" layoutY="395.0" promptText="Enter new number ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="480.0" layoutY="453.0" mnemonicParsing="false" onAction="#updateP" text="update ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="idp" layoutX="422.0" layoutY="195.0" prefHeight="31.0" prefWidth="186.0" promptText="Enter your participation id" />
+      <TextField fx:id="idU" layoutX="422.0" layoutY="259.0" prefHeight="31.0" prefWidth="186.0" promptText="id user" />
+   </children>
+</AnchorPane>
