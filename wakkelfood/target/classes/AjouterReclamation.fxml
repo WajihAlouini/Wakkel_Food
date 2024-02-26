@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.AjouterReclamation">
+   <children>
+      <!-- Header -->
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" spacing="10" />
+
+      <!-- Section Type -->
+      <Label layoutX="14.0" layoutY="107.0" text="Type :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ChoiceBox fx:id="typefield" layoutX="9.0" layoutY="149.0" prefHeight="30.0" prefWidth="162.0" />
+
+      <!-- Section Description -->
+      <Label layoutX="11.0" layoutY="191.0" text="Description :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextArea fx:id="descriptionfield" layoutX="10.0" layoutY="234.0" prefHeight="350.0" prefWidth="849.0" wrapText="true" />
+
+      <!-- Bouton Soumettre (Submit Button) -->
+      <Button layoutX="877.0" layoutY="544.0" mnemonicParsing="false" onAction="#ajouterReclamation" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Soumettre" />
+      <Label layoutX="11.0" prefHeight="64.0" prefWidth="314.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Formulaire de Réclamation">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

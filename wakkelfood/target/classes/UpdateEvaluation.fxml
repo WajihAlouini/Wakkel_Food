@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.ModifierEvaluationController">
+    <children>
+        <Label layoutX="45.0" layoutY="40.0" text="ID Evaluation:" />
+        <TextField fx:id="id_evaluationField" layoutX="180.0" layoutY="40.0" disable="true" />
+
+        <Label layoutX="45.0" layoutY="90.0" text="ID Commande:" />
+        <TextField fx:id="idCommandeField" layoutX="180.0" layoutY="90.0" />
+
+        <Label layoutX="45.0" layoutY="140.0" text="Date:" />
+        <TextField fx:id="dateField" layoutX="180.0" layoutY="140.0" />
+
+        <Label layoutX="45.0" layoutY="190.0" text="Note:" />
+        <TextField fx:id="noteField" layoutX="180.0" layoutY="190.0" />
+
+        <Label layoutX="45.0" layoutY="240.0" text="Commentaire:" />
+        <TextArea fx:id="commentaireArea" layoutX="180.0" layoutY="240.0" prefWidth="300.0" prefHeight="100.0" />
+
+        <Button layoutX="250.0" layoutY="360.0" onAction="#UpdateEvaluation" text="Modifier" />
+    </children>
+</AnchorPane>
