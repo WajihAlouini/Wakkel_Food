@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="498.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ItemPlatController">
+    <children>
+        <VBox prefHeight="498.0" prefWidth="412.0">
+            <children>
+                <HBox prefHeight="47.0" prefWidth="523.0">
+                    <children>
+                        <Label fx:id="PlatNameLabel" prefHeight="47.0" prefWidth="200.0" text="   Couscous">
+                            <font>
+                                <Font name="Ebrima Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="PlatPrixLabel" prefHeight="47.0" prefWidth="158.0" text="Prix(TND):23">
+                            <font>
+                                <Font name="Ebrima Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="PlatIngredientLabel" prefHeight="47.0" prefWidth="169.0" text="couscous, poissoin etc" />
+                    </children>
+                </HBox>
+                <ImageView fx:id="pimg" fitHeight="402.0" fitWidth="496.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/couscous.jpg" />
+               </image></ImageView>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

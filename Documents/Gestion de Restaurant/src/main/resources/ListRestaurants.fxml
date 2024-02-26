@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListRestaurantsController">
+    <TableView fx:id="restaurantsTableView" layoutX="12.0" layoutY="24.0" prefHeight="388.0" prefWidth="678.0">
+        <columns>
+            <!-- Add your columns here -->
+            <TableColumn fx:id="idColumn" prefWidth="136.0" text="ID" />
+            <TableColumn fx:id="nomColumn" prefWidth="127.0" text="Nom" />
+            <TableColumn fx:id="adresseColumn" prefWidth="126.0" text="Adresse" />
+            <TableColumn fx:id="categorieColumn" prefWidth="154.0" text="Catégorie" />
+            <TableColumn fx:id="imgPathColumn" prefWidth="154.0" text="Path image" />
+            <!-- Add more columns if needed -->
+        </columns>
+    </TableView>
+
+    <Button fx:id="ajouteRestoButton" layoutX="37.0" layoutY="419.0" onAction="#addRestaurant" prefHeight="86.0" prefWidth="119.0" text="Ajouter" />
+   <Button fx:id="modifierRestoButton" layoutX="202.0" layoutY="419.0" onAction="#modifierRestaurant" prefHeight="86.0" prefWidth="119.0" text="Modifier" />
+    <Button fx:id="supprimerRestoButton" layoutX="350.0" layoutY="419.0" onAction="#supprimerRestaurant" prefHeight="86.0" prefWidth="119.0" text="Supprimer" />
+
+
+</AnchorPane>

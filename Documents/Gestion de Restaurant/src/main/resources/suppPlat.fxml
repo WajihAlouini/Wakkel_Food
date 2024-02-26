@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.PlatController"
+            prefHeight="200" prefWidth="400">
+
+    <!-- You can adjust the layout and styles as needed -->
+    <children>
+        <!-- Label for Plat ID -->
+        <Label text="ID du plat" layoutX="50" layoutY="50" />
+
+        <!-- TextField for entering Plat ID -->
+        <TextField fx:id="platIdTextField" layoutX="200" layoutY="50" />
+
+        <!-- Supprimer Button -->
+        <Button fx:id="supprimerPlatButton" text="Supprimer" onAction="#handleSupprimerPlat" layoutX="200" layoutY="100" />
+
+        <!-- You can add more elements or adjust the layout as needed -->
+    </children>
+</AnchorPane>

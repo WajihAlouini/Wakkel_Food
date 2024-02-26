@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.RestaurantController"
+            prefHeight="400" prefWidth="600">
+
+    <!-- You can adjust the layout and styles as needed -->
+    <children>
+        <!-- Label for Restaurant Name -->
+        <Label text="Nom du restaurant" layoutX="50" layoutY="50" />
+
+        <!-- TextField for entering Restaurant Name -->
+        <TextField fx:id="nameTextField" layoutX="200" layoutY="50" />
+
+        <!-- Label for Restaurant Address -->
+        <Label text="Adresse du restaurant" layoutX="50" layoutY="100" />
+
+        <!-- TextField for entering Restaurant Address -->
+        <TextField fx:id="addressTextField" layoutX="200" layoutY="100" />
+
+        <!-- Label for Restaurant Category -->
+        <Label text="Catégorie du restaurant" layoutX="50" layoutY="150" />
+
+        <!-- ComboBox for selecting Restaurant Category -->
+        <ComboBox fx:id="categoryComboBox" layoutX="200" layoutY="150" />
+
+        <!-- Label for Image Path -->
+        <Label text="Chemin de l'image" layoutX="50" layoutY="200" />
+
+        <!-- TextField for entering Image Path -->
+        <TextField fx:id="imagePathField" layoutX="200" layoutY="200" />
+
+        <!-- Ajouter Button -->
+        <Button fx:id="ajouterButton1" text="Ajouter" onAction="#handleAjouter" layoutX="200" layoutY="250" />
+
+        <!-- You can add more elements or adjust the layout as needed -->
+    </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlatController">
+    <Label layoutX="59.0" layoutY="113.0" text="Nom du plat">
+        <font>
+            <Font name="Consolas" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="platNameTextField" layoutX="286.0" layoutY="109.0" />
+
+    <Text layoutX="57.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix Du Plat" wrappingWidth="134.0">
+        <font>
+            <Font name="Consolas" size="14.0" />
+        </font>
+    </Text>
+    <TextField fx:id="prixDuPlatTextField" layoutX="286.0" layoutY="176.0" />
+
+    <Label layoutX="57.0" layoutY="264.0" text="Liste des ingrédients">
+        <font>
+            <Font name="Consolas" size="14.0" />
+        </font>
+    </Label>
+    <TextArea fx:id="ingredientsTextArea" layoutX="286.0" layoutY="260.0" prefHeight="43.0" prefWidth="345.0" />
+    <ComboBox fx:id="restaurantComboBox" layoutX="286.0" layoutY="359.0" promptText="Select Restaurant" />
+
+    <Button fx:id="ajoutPlatButton" layoutX="247.0" layoutY="489.0" mnemonicParsing="false" onAction="#handleAjoutPlatButton" prefHeight="100.0" prefWidth="141.0" text="Ajouter" />
+
+    <Text layoutX="59.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du restaurant">
+        <font>
+            <Font name="Consolas" size="14.0" />
+        </font>
+    </Text>
+    <!-- ... existing code ... -->
+
+    <Label layoutX="59.0" layoutY="420.0" text="Image Path">
+        <font>
+            <Font name="Consolas" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="imgPathTextField" layoutX="286.0" layoutY="416.0" />
+
+    <!-- ... existing code ... -->
+
+    <!-- Add a MenuBar -->
+
+
+</AnchorPane>
