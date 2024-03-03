@@ -10,6 +10,7 @@ module com.example.test_javafx2 {
     requires java.mail;
     requires javafx.swing;
     requires javafx.media;
+    requires org.apache.pdfbox;
     //requires libusb4java;
 
     opens entities to javafx.base;
