@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListPlatsController">
+    <ImageView fx:id="listplatbg" fitHeight="727.0" fitWidth="1135.0" layoutX="-6.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="-29.0" AnchorPane.topAnchor="-2.0">
+        <Image url="@images/platbg.jpg" />
+    </ImageView>
+    <TableView fx:id="platsTableView" layoutX="168.0" layoutY="87.0" prefHeight="388.0" prefWidth="768.0">
+        <columns>
+            <TableColumn fx:id="idColumn1" prefWidth="154.0" text="ID" />
+            <TableColumn fx:id="nomColumn1" prefWidth="142.0" text="Nom" />
+            <TableColumn fx:id="prixColumn" prefWidth="133.0" text="Prix" />
+            <TableColumn fx:id="ingredientColumn" prefWidth="235.0" text="Ingredient" />
+         <TableColumn fx:id="imgPathColumn" prefWidth="143.0" text="Image" />
+        </columns>
+    </TableView>
+    <Button fx:id="ajouterPlatButton" layoutX="149.0" layoutY="529.0" onAction="#addPlat" prefHeight="86.0" prefWidth="119.0" text="Ajouter" />
+    <Button fx:id="modifierPlatButton" layoutX="430.0" layoutY="536.0" onAction="#modifierPlat" prefHeight="86.0" prefWidth="119.0" text="Modifier" />
+    <Button fx:id="supprimerPlatButton" layoutX="734.0" layoutY="529.0" onAction="#supprimerPlat" prefHeight="86.0" prefWidth="119.0" text="Supprimer" />
+   <TextField fx:id="searchField" layoutX="13.0" layoutY="221.0" onKeyReleased="#handleSearch" prefHeight="40.0" prefWidth="136.0" promptText="Search Plats" />
+   <Button fx:id="pdfPlatButton" layoutX="30.0" layoutY="337.0" onAction="#pdf" mnemonicParsing="false" prefHeight="86.0" prefWidth="106.0" text="PDF" />
+
+</AnchorPane>

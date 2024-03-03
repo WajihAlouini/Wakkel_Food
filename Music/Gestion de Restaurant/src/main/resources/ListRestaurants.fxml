@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListRestaurantsController">
+    <ImageView fx:id="restobg" fitHeight="720.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images/restobg.jpg" />
+        </image>
+    </ImageView>
+
+    <TextField fx:id="searchField" layoutX="14.0" layoutY="197.0" onKeyReleased="#handleSearch" prefHeight="40.0" prefWidth="204.0" promptText="Search Restaurants" />
+
+    <TableView fx:id="restaurantsTableView" layoutX="246.0" layoutY="90.0" prefHeight="388.0" prefWidth="678.0">
+        <columns>
+            <!-- Add your columns here -->
+            <TableColumn fx:id="idColumn" prefWidth="136.0" text="ID" />
+            <TableColumn fx:id="nomColumn" prefWidth="127.0" text="Nom" />
+            <TableColumn fx:id="adresseColumn" prefWidth="126.0" text="Adresse" />
+            <TableColumn fx:id="categorieColumn" prefWidth="154.0" text="Catégorie" />
+            <TableColumn fx:id="imgPathColumn" prefWidth="154.0" text="Logo" />
+            <!-- Add more columns if needed -->
+        </columns>
+    </TableView>
+
+    <Button fx:id="ajouteRestoButton" layoutX="246.0" layoutY="548.0" onAction="#addRestaurant" prefHeight="86.0" prefWidth="119.0" text="Ajouter" />
+    <Button fx:id="modifierRestoButton" layoutX="509.0" layoutY="548.0" onAction="#modifierRestaurant" prefHeight="86.0" prefWidth="119.0" text="Modifier" />
+    <Button fx:id="supprimerRestoButton" layoutX="779.0" layoutY="540.0" onAction="#supprimerRestaurant" prefHeight="86.0" prefWidth="119.0" text="Supprimer" />
+    <Button fx:id="pdfRestoButton" layoutX="34.0" layoutY="300.0" onAction="#pdf" mnemonicParsing="false" prefHeight="86.0" prefWidth="132.0" text="PDF" />
+
+</AnchorPane>
