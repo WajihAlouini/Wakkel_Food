@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: #112327;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test_javafx2.ForgotPasswordController">
+   <children>
+      <AnchorPane fx:id="forgotAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: #112327;">
+         <children>
+            <ImageView fx:id="backgroundfoodImageView" fitHeight="400.0" fitWidth="292.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/backgroundfood.png" />
+               </image>
+            </ImageView>
+            <AnchorPane blendMode="DARKEN" layoutX="14.0" layoutY="152.0" prefHeight="33.0" prefWidth="35.0" style="-fx-background-color: #112327;" />
+            <ImageView fx:id="lockIlmageView" fitHeight="81.0" fitWidth="84.0" layoutX="111.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/lock.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="forgotemailTextField" layoutX="56.0" layoutY="157.0" prefHeight="26.0" prefWidth="194.0" promptText="Entrer votre email" />
+            <ImageView fx:id="userImageView" fitHeight="29.0" fitWidth="32.0" layoutX="21.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="echecloginLabel" layoutX="71.0" layoutY="242.0" prefHeight="18.0" prefWidth="159.0" textFill="RED" />
+            <Button fx:id="forgotButton" layoutX="94.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleForgotEmail" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #0095C8;" text="Envoyer" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="96.0" layoutY="365.0" prefHeight="18.0" prefWidth="94.0" style="-fx-background-color: #112327;" />
+            <Label fx:id="retournerforgetmdpLabel" layoutX="103.0" layoutY="363.0" prefHeight="22.0" prefWidth="87.0" text="Retourner&gt;&gt;" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="sloganImageView" fitHeight="400.0" fitWidth="228.0" layoutX="292.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/slogan.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="echecforgotLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="235.0" prefHeight="18.0" prefWidth="159.0" textAlignment="CENTER" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

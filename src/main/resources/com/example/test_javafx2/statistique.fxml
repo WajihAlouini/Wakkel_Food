@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="624.0" prefWidth="994.0" style="-fx-background-color: #102b34;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test_javafx2.StatistiqueController">
+   <children>
+      <ImageView fx:id="statistiquebackgroundImageView" fitHeight="618.0" fitWidth="989.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/statistiquebackground.jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="491.0" layoutY="300.0" radius="282.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" />
+      <PieChart fx:id="statistiquePieChart" layoutX="179.0" layoutY="40.0" prefHeight="550.0" prefWidth="618.0" />
+   </children>
+</AnchorPane>
