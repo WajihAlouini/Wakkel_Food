@@ -35,10 +35,10 @@ public class ModifierEvenement {
     @FXML
     void Menu(MouseEvent event) {
         Connection cnx = DataSource.getInstance().getCnx();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AfficherEvenement.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/back.fxml"));
         try {
             Parent root = loader.load();
-            AfficherEvenement controller = loader.getController();
+            back controller = loader.getController();
             labelMenu.getScene().setRoot(root);
         }catch (IOException e){
             e.printStackTrace();

@@ -45,7 +45,7 @@ public class AfficherParticipation {
                 participation.setIdUser(rs.getInt(2));
                 participation.setIdEvent(rs.getInt(3));
                 participation.setNbrPlace(rs.getInt(4));
-
+                participation.setEmailUser(rs.getString(5));
 
                 items.add(participation);
             }
@@ -95,10 +95,10 @@ public class AfficherParticipation {
     }
     @FXML
     void menu(MouseEvent event) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AjouterParticipation.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Dashboard.fxml"));
         try {
             Parent root = loader.load();
-            AjouterParticipation controller = loader.getController();
+            DashBoard controller = loader.getController();
             labelB.getScene().setRoot(root);
         }catch (IOException e){
             e.printStackTrace();

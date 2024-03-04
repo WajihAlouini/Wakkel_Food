@@ -23,6 +23,8 @@ import java.sql.Connection;
 public class ModifierParticipation {
 
 
+    @FXML
+    private TextField emailU;
 
     @FXML
     private Label labelM;
@@ -41,10 +43,10 @@ public class ModifierParticipation {
     void Menu(MouseEvent event) {
 
     Connection cnx = DataSource.getInstance().getCnx();
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("/AfficherParticipation.fxml"));
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("/back.fxml"));
         try {
         Parent root = loader.load();
-        AfficherParticipation controller = loader.getController();
+        back controller = loader.getController();
         labelM.getScene().setRoot(root);
     }
         catch (IOException e)
@@ -53,6 +55,7 @@ public class ModifierParticipation {
     }
     }
     @FXML
+
     void updateP(ActionEvent event) {
         try {
             // Get values from text fields
@@ -60,9 +63,10 @@ public class ModifierParticipation {
             int idUs = Integer.parseInt(idU.getText());
             int ide = Integer.parseInt(idevent.getText());
             int nbrPlace = Integer.parseInt(nbrp.getText());
+            String emailUs = emailU.getText(); // Replace with the actual ID of your email TextField
 
             // Create a Participation object with the retrieved values
-            Participation participation = new Participation(idPa, idUs,ide, nbrPlace);
+            Participation participation = new Participation(idPa, idUs, ide, nbrPlace, emailUs);
 
             // Set the correct ID of the record you want to update
 
@@ -83,5 +87,4 @@ public class ModifierParticipation {
             alert.showAndWait();
         }
     }
-
 }

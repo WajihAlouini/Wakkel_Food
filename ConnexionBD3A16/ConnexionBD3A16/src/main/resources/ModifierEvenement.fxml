@@ -10,15 +10,15 @@
 
 <AnchorPane prefHeight="624.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierEvenement">
    <children>
-      <Label fx:id="labelMenu" layoutX="40.0" layoutY="25.0" onMouseClicked="#Menu" prefHeight="17.0" prefWidth="145.0" text="cancel" textFill="#2504ff">
+      <Label fx:id="labelMenu" layoutX="14.0" layoutY="14.0" onMouseClicked="#Menu" prefHeight="17.0" prefWidth="145.0" text="cancel" textFill="#9e0606">
          <font>
-            <Font size="17.0" />
+            <Font name="System Italic" size="24.0" />
          </font>
       </Label>
       <TextField fx:id="EventN" layoutX="386.0" layoutY="154.0" prefHeight="34.0" prefWidth="149.0" />
       <DatePicker fx:id="DateD" layoutX="386.0" layoutY="226.0" prefHeight="34.0" prefWidth="149.0" />
       <DatePicker fx:id="DateF" layoutX="386.0" layoutY="300.0" prefHeight="34.0" prefWidth="149.0" />
-      <Button layoutX="424.0" layoutY="369.0" mnemonicParsing="false" onAction="#UpdateE" prefHeight="34.0" prefWidth="74.0" text="Update" />
+      <Button blendMode="EXCLUSION" layoutX="424.0" layoutY="369.0" mnemonicParsing="false" onAction="#UpdateE" prefHeight="34.0" prefWidth="74.0" text="Update" />
       <Text layoutX="208.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New event name :">
          <font>
             <Font size="18.0" />

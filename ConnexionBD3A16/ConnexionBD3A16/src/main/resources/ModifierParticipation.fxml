@@ -9,32 +9,33 @@
 
 <AnchorPane prefHeight="624.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierParticipation">
    <children>
-      <Label fx:id="labelM" layoutX="52.0" layoutY="26.0" onMouseClicked="#Menu" text="back" textFill="#0e05f7">
+      <Label fx:id="labelM" layoutX="52.0" layoutY="26.0" onMouseClicked="#Menu" text="back" textFill="#a10000">
          <font>
-            <Font size="19.0" />
+            <Font name="Arial Narrow Italic" size="24.0" />
          </font>
       </Label>
-      <Text fill="#cf0101" fontSmoothingType="LCD" layoutX="86.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="please enter your new participation informations">
+      <Text fontSmoothingType="LCD" layoutX="72.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your new participation informations :" wrappingWidth="523.1589965820312">
          <font>
-            <Font size="25.0" />
+            <Font name="System Bold" size="25.0" />
          </font>
       </Text>
-      <TextField fx:id="idevent" layoutX="422.0" layoutY="324.0" promptText="Enter new event id">
+      <TextField fx:id="idevent" layoutX="422.0" layoutY="303.0" promptText="Enter new event id">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="nbrp" layoutX="422.0" layoutY="395.0" promptText="Enter new number ">
+      <TextField fx:id="nbrp" layoutX="422.0" layoutY="375.0" promptText="Enter new number ">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <Button layoutX="480.0" layoutY="453.0" mnemonicParsing="false" onAction="#updateP" text="update ">
+      <Button blendMode="DIFFERENCE" layoutX="479.0" layoutY="513.0" mnemonicParsing="false" onAction="#updateP" text="update ">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <TextField fx:id="idp" layoutX="422.0" layoutY="195.0" prefHeight="31.0" prefWidth="186.0" promptText="Enter your participation id" />
-      <TextField fx:id="idU" layoutX="422.0" layoutY="259.0" prefHeight="31.0" prefWidth="186.0" promptText="id user" />
+      <TextField fx:id="idp" layoutX="421.0" layoutY="184.0" prefHeight="31.0" prefWidth="186.0" promptText="Enter your participation id" />
+      <TextField fx:id="idU" layoutX="422.0" layoutY="242.0" prefHeight="31.0" prefWidth="186.0" promptText="id user" />
+      <TextField fx:id="emailU" layoutX="424.0" layoutY="447.0" prefHeight="31.0" prefWidth="186.0" promptText="Enter your email" />
    </children>
 </AnchorPane>

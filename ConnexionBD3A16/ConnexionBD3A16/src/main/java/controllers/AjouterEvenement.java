@@ -37,10 +37,10 @@ public class AjouterEvenement {
 
     @FXML
     void Menu(MouseEvent event) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/DashBoard.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/back.fxml"));
         try {
             Parent root = loader.load();
-            DashBoard controller = loader.getController();
+            back controller = loader.getController();
             labelMenu.getScene().setRoot(root);
         }catch (IOException e){
             e.printStackTrace();

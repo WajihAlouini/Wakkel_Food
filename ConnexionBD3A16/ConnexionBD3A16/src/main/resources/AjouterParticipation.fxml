@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -7,26 +8,29 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="624.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterParticipation">
    <children>
-      <Label fx:id="labelMenu" layoutX="14.0" layoutY="14.0" onMouseClicked="#Menu" prefHeight="32.0" prefWidth="164.0" text="Wakkel Food" textFill="#4400ff">
+      <Label fx:id="labelMenu" layoutX="1.0" layoutY="-2.0" onMouseClicked="#Menu" prefHeight="59.0" prefWidth="200.0" text="Wakkel Food" textFill="#ae0202">
          <font>
-            <Font size="19.0" />
+            <Font name="System Italic" size="24.0" />
          </font>
+         <padding>
+            <Insets left="20.0" top="5.0" />
+         </padding>
       </Label>
-      <Text fill="RED" layoutX="138.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter participation" wrappingWidth="301.0">
+      <Text layoutX="28.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your data here :" wrappingWidth="301.0">
          <font>
-            <Font size="21.0" />
+            <Font name="System Bold" size="21.0" />
          </font>
       </Text>
-      <TextField fx:id="idEvent" layoutX="365.0" layoutY="193.0" prefHeight="41.0" prefWidth="164.0" promptText="id de l'evenement" />
-      <TextField fx:id="idU" layoutX="365.0" layoutY="271.0" prefHeight="41.0" prefWidth="164.0" promptText="id user" />
-      <Button fx:id="Ajout" layoutX="396.0" layoutY="423.0" mnemonicParsing="false" onAction="#ajoutP" prefHeight="32.0" prefWidth="102.0" text="Participer">
+      <TextField fx:id="idU" layoutX="384.0" layoutY="240.0" prefHeight="41.0" prefWidth="164.0" promptText="id user" />
+      <Button fx:id="Ajout" blendMode="EXCLUSION" layoutX="415.0" layoutY="471.0" mnemonicParsing="false" onAction="#ajoutP" prefHeight="32.0" prefWidth="102.0" text="Participer">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <TextField fx:id="nbrP" layoutX="365.0" layoutY="345.0" prefHeight="41.0" prefWidth="164.0" promptText="Nombre de places" />
+      <TextField fx:id="nbrP" layoutX="384.0" layoutY="318.0" prefHeight="41.0" prefWidth="164.0" promptText="Nombre de places" />
+      <TextField fx:id="emailU" layoutX="384.0" layoutY="393.0" prefHeight="42.0" prefWidth="164.0" promptText="email" />
+      <TextField fx:id="idE" layoutX="384.0" layoutY="161.0" prefHeight="41.0" prefWidth="164.0" promptText="id de l'event" />
    </children>
 </AnchorPane>

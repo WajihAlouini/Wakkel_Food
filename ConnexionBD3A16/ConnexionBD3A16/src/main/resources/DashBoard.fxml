@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="624.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashBoard">
    <children>
-      <Text layoutX="327.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Management" textAlignment="CENTER" wrappingWidth="280.3310546875">
+      <ImageView fx:id="backgroundImageView" fitHeight="624.0" fitWidth="994.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/background.jpg" />
+         </image></ImageView>
+      <Text fill="WHITE" layoutX="327.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Management" textAlignment="CENTER" wrappingWidth="280.3310546875">
          <font>
             <Font size="29.0" />
          </font>
       </Text>
-      <Text layoutX="292.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participation Management">
+      <Text fill="WHITE" layoutX="292.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participation Management">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <Label fx:id="labelAdd" layoutX="413.0" layoutY="197.0" onMouseClicked="#AjouterEvent" text="Add Event" textAlignment="CENTER" textFill="#0015ff">
+      <Label fx:id="labelAdd" layoutX="413.0" layoutY="197.0" onMouseClicked="#AjouterEvent" text="Add Event" textAlignment="CENTER" textFill="RED">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="labelList" layoutX="415.0" layoutY="276.0" onMouseClicked="#listE" text="Event List" textAlignment="CENTER" textFill="#1100ff">
+      <Label fx:id="labelList" layoutX="415.0" layoutY="276.0" onMouseClicked="#listE" text="Event List" textAlignment="CENTER" textFill="RED">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="labelPart" layoutX="377.0" layoutY="443.0" onMouseClicked="#MenuP" text="Participation menu" textFill="#1100ff">
+      <Label fx:id="labelPart" layoutX="377.0" layoutY="443.0" onMouseClicked="#MenuP" text="Participation menu" textFill="RED">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <Label fx:id="labelPartc" layoutX="404.0" layoutY="520.0" onMouseClicked="#MenuPa" prefHeight="19.0" prefWidth="165.0" text="Partication list" textFill="#1600ff">
+      <Label fx:id="labelPartc" layoutX="404.0" layoutY="520.0" onMouseClicked="#MenuPa" prefHeight="19.0" prefWidth="165.0" text="Partication list" textFill="RED">
          <font>
             <Font size="23.0" />
          </font>

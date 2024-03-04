@@ -16,10 +16,9 @@ public class ParticipationService implements IEvenement <Participation> {
     Connection cnx= DataSource.getInstance().getCnx();
 
     @Override
-    public void ajouter(Participation p) {
-        String req = "INSERT INTO participation (idEvent,idUser, nbrPlace) " +
-                "VALUES (" + p.getIdUser() + ", " + p.getIdEvent() + ", " +
-                p.getNbrPlace() + ")";
+   public void ajouter(Participation p) {
+        String req = "INSERT INTO participation (idUser ,idEvent,nbrPlace, emailUser) " +
+                "VALUES (" + p.getIdUser() + "," + p.getIdEvent() + ",  " + p.getNbrPlace() + ", '" + p.getEmailUser() + "')";
 
         try {
             Statement st = cnx.createStatement();
@@ -29,8 +28,24 @@ public class ParticipationService implements IEvenement <Participation> {
            ex.printStackTrace();
         }
     }
+/*@Override
+   public void ajouter(Participation p) {
+       String req = "INSERT INTO participation (idUser,idEvent,  nbrPlace, emailUser) VALUES (?, ?, ?, ?)";
 
+       try (PreparedStatement st = cnx.prepareStatement(req)) {
+           // Set parameters using the appropriate data types
+           st.setInt(1, p.getIdUser());
+           st.setInt(2, p.getIdEvent());
+           st.setInt(3, p.getNbrPlace());
+           st.setString(4, p.getEmailUser());
 
+           // Execute the update
+           st.executeUpdate();
+           System.out.println("Participation added successfully!");
+       } catch (SQLException ex) {
+           ex.printStackTrace();
+       }
+   }*/
 
 
     @Override
@@ -46,13 +61,14 @@ public class ParticipationService implements IEvenement <Participation> {
     @Override
 
     public void Modifier(Participation p) {
-        String sql = "UPDATE participation SET idUser=?,idEvent=?, nbrPlace= ? WHERE idP = ?";
+        String sql = "UPDATE participation SET idUser=?,idEvent=?, nbrPlace= ?, emailUser= ? WHERE idP = ?";
         try (PreparedStatement ps = cnx.prepareStatement(sql)) {
             ps.setInt(1,p.getIdUser());
             ps.setInt(2, p.getIdEvent());
 
             ps.setInt(3, p.getNbrPlace());
-            ps.setInt(4,p.getIdP());
+            ps.setString(4, p.getEmailUser());
+            ps.setInt(5,p.getIdP());
 
 
             int rowsUpdated = ps.executeUpdate();
@@ -80,7 +96,7 @@ public class ParticipationService implements IEvenement <Participation> {
                 p.setIdEvent(rs.getInt("idE"));
                 p.setIdUser(rs.getInt("idU"));
                 p.setNbrPlace(rs.getInt("nbrP"));
-
+                p.setEmailUser(rs.getString("emailU"));
 
                 list.add(p);
             }
@@ -109,7 +125,26 @@ public class ParticipationService implements IEvenement <Participation> {
             e.printStackTrace();
         }
     }
+    public int nombreParticipationsUtilisateur(int idUtilisateur) {
+        int nombreParticipations = 0;
 
+        try {
+            // Utilisez une requête SQL pour compter le nombre de participations de l'utilisateur à l'événement
+            String req = "SELECT COUNT(*) FROM participation WHERE idUser = ?  ";
+            PreparedStatement ps = cnx.prepareStatement(req);
+            ps.setInt(1, idUtilisateur);
+
+
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                nombreParticipations = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return nombreParticipations;
+    }
 
 }
 

@@ -4,9 +4,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
+
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class DashBoard {
 
@@ -19,6 +25,18 @@ public class DashBoard {
     private Label labelPart;
     @FXML
     private Label labelPartc;
+
+
+    @FXML
+    private ImageView backgroundImageView;
+
+    public void initialize() {
+        // Charger l'image de fond
+        File backgrounderFile = new File("C:/Users/user/OneDrive/Documents/Bureau/ConnexionBD3A16 (2)/images/background.jpg");
+        Image backgrounderImage = new Image(backgrounderFile.toURI().toString());
+        backgroundImageView.setImage(backgrounderImage);
+    }
+
     @FXML
     void AjouterEvent(MouseEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/AjouterEvenement.fxml"));
