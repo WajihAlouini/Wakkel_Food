@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="467.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.test_javafx2.ItemPlatController">
+    <VBox prefHeight="467.0" prefWidth="420.0">
+        <HBox prefHeight="47.0" prefWidth="523.0">
+            <Label fx:id="PlatNameLabel" prefHeight="47.0" prefWidth="200.0" text="   Couscous">
+                <font>
+                    <Font name="Ebrima Bold" size="18.0"/>
+                </font>
+            </Label>
+            <Label fx:id="PlatPrixLabel" prefHeight="47.0" prefWidth="158.0" text="Prix(TND):23">
+                <font>
+                    <Font name="Ebrima Bold" size="14.0"/>
+                </font>
+            </Label>
+            <Label fx:id="PlatIngredientLabel" prefHeight="47.0" prefWidth="169.0" text="couscous, poissoin etc"
+                   textFill="#2124c2">
+                <font>
+                    <Font name="System Bold Italic" size="12.0"/>
+                </font>
+            </Label>
+        </HBox>
+        <ImageView fx:id="pimg" fitHeight="466.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true"/>
+    </VBox>
+</AnchorPane>

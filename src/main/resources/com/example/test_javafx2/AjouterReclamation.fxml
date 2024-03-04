@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="994.0" style="-fx-background-color: #a2baf1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test_javafx2.AjouterReclamation">
+   <children>
+      <!-- Header -->
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" spacing="10" />
+
+      <!-- Section Type -->
+      <Label layoutX="14.0" layoutY="70.0" text="Type :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="typefield" layoutX="9.0" layoutY="101.0" prefHeight="30.0" prefWidth="162.0" />
+
+      <!-- Section Description -->
+      <Label layoutX="11.0" layoutY="139.0" text="Description :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionfield" layoutX="10.0" layoutY="174.0" prefHeight="350.0" prefWidth="849.0" wrapText="true" />
+      <TextField fx:id="captchaField" editable="false" layoutX="21.0" layoutY="557.0" prefHeight="30.0" prefWidth="162.0" />
+      <!-- ... (existing code) -->
+
+      <!-- Bouton Soumettre (Submit Button) -->
+      <Button layoutX="877.0" layoutY="544.0" mnemonicParsing="false" onAction="#ajouterReclamation" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: #3498db; -fx-text-fill: white;" text="Soumettre" />
+
+      <!-- Upload Button -->
+      <Button fx:id="uploadButton" layoutX="750.0" layoutY="544.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: #2ecc71; -fx-text-fill: white;" text="Upload" />
+
+      <Label layoutX="11.0" prefHeight="64.0" prefWidth="314.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Formulaire de Réclamation">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userCaptchaInput" layoutX="224.0" layoutY="557.0" prefHeight="30.0" prefWidth="162.0" />
+      <Label layoutX="224.0" layoutY="530.0" text="Saisir le Captcha :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="530.0" text="Captcha :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

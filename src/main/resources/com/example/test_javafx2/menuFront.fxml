@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test_javafx2.MenuFrontController">
+   <children>
+      <AnchorPane layoutX="155.0" layoutY="-18.0" prefHeight="624.0" prefWidth="260.0" style="-fx-background-color: #102b34;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <JFXButton fx:id="compteButton" layoutY="194.0" onAction="#ButtonsMenuOnAction" prefHeight="58.0" prefWidth="206.0" text="Compte" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Segoe Print" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="restaurantButton" layoutY="253.0" onAction="#ButtonsMenuOnAction" prefHeight="58.0" prefWidth="206.0" text="     Restaurants" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Segoe Print" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="evenementButton" layoutY="311.0" onAction="#ButtonsMenuOnAction" prefHeight="58.0" prefWidth="206.0" text="    Evénement" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Segoe Print" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="commandeButton" layoutY="370.0" prefHeight="58.0" prefWidth="206.0" text="     Commandes" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Segoe Print" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="reclamationButton" layoutY="429.0" onAction="#ButtonsMenuOnAction" prefHeight="58.0" prefWidth="206.0" text="     Reclamation" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Segoe Print" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="evaluationButton" layoutX="18.2" layoutY="493.0" onAction="#ButtonsMenuOnAction" prefHeight="58.0" prefWidth="206.0" text="   Evaluation" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Segoe Print" size="22.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="nomloginLabel" layoutX="133.0" layoutY="26.0" prefHeight="28.0" prefWidth="153.0" textFill="#00b8ff">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="prenomloginLabel" layoutX="84.0" layoutY="59.0" prefHeight="28.0" prefWidth="185.0" textFill="#00b8ff">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Separator layoutY="92.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Label layoutX="80.0" layoutY="102.0" prefHeight="68.0" prefWidth="175.0" text="Menu" textFill="#fa0f0f" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Cambria" size="56.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="menuImageView" fitHeight="66.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../images/menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Separator layoutX="59.0" layoutY="166.0" prefWidth="155.0" style="-fx-background-color: #1449B3;" />
+            <ImageView fx:id="compteImageView" fitHeight="41.0" fitWidth="48.0" layoutX="39.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/compte.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="restaurantImageView" fitHeight="48.0" fitWidth="48.0" layoutX="35.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/restaurant.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="evenementImageView" fitHeight="48.0" fitWidth="48.0" layoutX="36.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/evenement.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="commandeImageView" fitHeight="48.0" fitWidth="48.0" layoutX="33.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/commande.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="reclamationImageView" fitHeight="48.0" fitWidth="48.0" layoutX="40.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/reclamation.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="refreshImageView" fitHeight="36.0" fitWidth="36.0" layoutX="4.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/refresh.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="evaluationImageView" fitHeight="48.0" fitWidth="48.0" layoutX="40.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/reclamation.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="listevImageView" fitHeight="41.0" fitWidth="58.0" layoutX="41.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/listev.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="76.0" prefWidth="1280.0" style="-fx-background-color: #1449B3;">
+         <children>
+            <JFXButton fx:id="logoutButton" alignment="BASELINE_LEFT" layoutX="1071.0" layoutY="10.0" onAction="#ButtonsMenuOnAction" prefHeight="57.0" prefWidth="191.0" text="Déconnexion">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.5492424748160623" endY="0.8977272564714606" startX="0.5378787806539824" startY="0.06060600280761719">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.025925925001502037" green="0.8376542925834656" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8619753122329712" green="0.6814814805984497" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </JFXButton>
+            <ImageView fx:id="logoutImageView" fitHeight="58.0" fitWidth="58.0" layoutX="1212.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/logout.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="emptyAnchorPane" layoutX="287.0" layoutY="76.0" onDragDetected="#ButtonsMenuOnAction" prefHeight="624.0" prefWidth="994.0" style="-fx-background-color: #102b34;" />
+      <ImageView fx:id="clientmenuImageView" fitHeight="86.0" fitWidth="86.0" layoutX="33.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <Circle fill="#1f93ff00" layoutX="76.0" layoutY="71.0" radius="43.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="#2197ff00" layoutX="76.0" layoutY="71.0" radius="63.0" stroke="#102b34" strokeType="INSIDE" strokeWidth="20.0" />
+      <Circle fill="#2197ff00" layoutX="76.0" layoutY="71.0" radius="63.0" stroke="WHITE" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
