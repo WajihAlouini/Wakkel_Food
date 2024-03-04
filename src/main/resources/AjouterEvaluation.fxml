@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="994.0" style="-fx-background-color: #a2baf1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.AjouterEvaluation">
+   <children>
+      <Label layoutX="11.0" prefHeight="64.0" prefWidth="295.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Formulaire d'évaluation" />
+      <ChoiceBox fx:id="notefield" layoutX="10.0" layoutY="93.0" prefHeight="30.0" prefWidth="162.0" />
+      <Label layoutX="10.0" layoutY="58.0" prefHeight="27.0" prefWidth="60.0" text="Note :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="131.0" text="Commentaire :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+
+      <TextArea fx:id="commentaireField" layoutX="10.0" layoutY="168.0" prefHeight="350.0" prefWidth="849.0" wrapText="true" />
+
+      <!-- Added TextFields for Captcha -->
+      <TextField fx:id="captchaField" editable="false" layoutX="10.0" layoutY="556.0" prefHeight="30.0" prefWidth="162.0" />
+      <Label layoutX="13.0" layoutY="528.0" text="Captcha :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userCaptchaInput" layoutX="214.0" layoutY="556.0" prefHeight="30.0" prefWidth="162.0" />
+      <Label layoutX="214.0" layoutY="529.0" text="Saisir le Captcha :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="soumettreButton" layoutX="877.0" layoutY="546.0" mnemonicParsing="false" onAction="#ajouterEvaluation" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: #3498db; -fx-text-fill: white;" text="Soumettre" />
+   </children>
+</AnchorPane>
